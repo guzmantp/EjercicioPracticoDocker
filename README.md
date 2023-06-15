@@ -58,7 +58,7 @@ En este apartado vamos a comprobar que herramientas tenemos instaladas.
     ```
 
     *Comprobamos que el servicio esté levantado y funcionando*
-    
+
     ```bash
     sudo systemctl status ssh
     ```
@@ -71,7 +71,7 @@ En este apartado vamos a comprobar que herramientas tenemos instaladas.
     ```
 <br>
 
-4. Instalación de Docker en **Ubuntu**: _____ [Docker Docs](https://docs.docker.com/engine/install/ubuntu/)
+4. Instalación de Docker en **Ubuntu**: `______` [Docker Docs](https://docs.docker.com/engine/install/ubuntu/)
     * *Seteamos los repositorios de docker*
 
         ```bash
