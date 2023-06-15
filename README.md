@@ -17,84 +17,95 @@ En este apartado vamos a comprobar que herramientas tenemos instaladas.
 *Comprobaremos la versión de cada una de las herramientas, si esta versión no aparece o el comando no se reconoce, no está instalada.*
 
 * Comprobación de ssh:
-    '''bash
+    ```bash
     ssh -V
-    '''
+    ```
 * Comprobación de git:
-    '''bash
+    ```bash
     git -v
-    '''
+    ```
 * Comprobación de docker:
-    '''bash
+    ```bash
 
-    '''
+    ```
 
 *En caso de que no tengas instalada alguna herramienta instalala con las instrucciones a continuación.*
 
 # Instalación de las herramientas
 
 1. Actualización de los repositorios:
-    '''bash
+    ```bash
     sudo apt update && sudo apt upgrade
-    '''
+    ```
 <br>
 
 2. Instalación de ssh:
-    '''bash
+
+    ```bash
     sudo apt install openssh-server
-    '''
+    ```
+
     *Habilitamos el servicio de ssh*
-    '''bash
+
+    ```bash
     sudo systemctl enable ssh
-    '''
+    ```
+
     *Arrancamos el servicio ssh*
-    '''bash
+
+    ```bash
     sudo systemctl start ssh
-    '''
+    ```
+
     *Comprobamos que el servicio esté levantado y funcionando*
-    '''bash
+    
+    ```bash
     sudo systemctl status ssh
-    '''
+    ```
 <br>
 
 3. Instalación de git:
-    '''bash
+
+    ```bash
     sudo apt install git
-    '''
+    ```
 <br>
 
 4. Instalación de Docker en **Ubuntu**: _____ [Docker Docs](https://docs.docker.com/engine/install/ubuntu/)
     * *Seteamos los repositorios de docker*
-        '''bash
+
+        ```bash
         sudo apt-get update
         sudo apt-get install ca-certificates curl gnupg
-        '''
-        '''bash
+        ```
+
+        ```bash
         sudo install -m 0755 -d /etc/apt/keyrings
         curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
         sudo chmod a+r /etc/apt/keyrings/docker.gpg
-        '''
-        '''bash
+        ```
+
+        ```bash
         echo \
         "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
         "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
         sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-        '''
+        ```
     <br>
 
     * *Instalación de Docker Engine*
-        '''bash
+        ```bash
         sudo apt-get update
-        '''
-        '''bash
+        ```
+        ```bash
         sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-        '''
+        ```
 
 
 
 
 
 
-'''bash
+```bash
 
-'''
+```
