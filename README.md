@@ -3,7 +3,16 @@
 Bienvenido a este ejercicio práctico en el que vamos a aprender los conceptos básicos de **Docker** y cómo **dockerizar** un servidor web con una página alojada de forma muy sencilla.<br>
 En primera instancia vamos a configurar correctamente nuestro entorno de trabajo:<br>
 
-## Configuración del entorno
+## Índice
+- [Configuración del Entorno](# Configuración del entorno)
+    * [Comprobación de las herramientas](## Comprobación de las herramientas)
+    * [Instalación de las herramientas](## Instalación de las herramientas)
+        1. [Actualización de repositorios](1. Actualización de los repositorios:)
+        2. [SSH](2. Instalación de ssh:)
+        3. [Git](3. Instalación de git:)
+        4. [Docker](4. Instalación de Docker en **Ubuntu**:)
+
+# Configuración del entorno
 
 Este ejercicio se va a realizar en un entorno **linux**, específicamente en un entorno **Ubuntu**, aprenderemos a utilizar Docker Engine mediante comandos.<br>
 
@@ -11,7 +20,7 @@ Este ejercicio se va a realizar en un entorno **linux**, específicamente en un 
     -*En un entorno Linux con escritorio instalar visual code desde los propios repositorios de la distribución.*
     -*Instalar ssh en el entorno linux y utilizar visual code de forma remota desde windows u otro entorno a elección con el plugin propietario 'Remote - SSH'*
 
-# Comprobación de las herramientas
+## Comprobación de las herramientas
 
 En este apartado vamos a comprobar que herramientas tenemos instaladas.
 *Comprobaremos la versión de cada una de las herramientas, si esta versión no aparece o el comando no se reconoce, no está instalada.*
@@ -26,12 +35,12 @@ En este apartado vamos a comprobar que herramientas tenemos instaladas.
     ```
 * Comprobación de docker:
     ```bash
-
+    docker -v
     ```
 
 *En caso de que no tengas instalada alguna herramienta instalala con las instrucciones a continuación.*
 
-# Instalación de las herramientas
+## Instalación de las herramientas
 
 1. Actualización de los repositorios:
     ```bash
