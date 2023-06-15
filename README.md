@@ -4,13 +4,10 @@ Bienvenido a este ejercicio práctico en el que vamos a aprender los conceptos b
 En primera instancia vamos a configurar correctamente nuestro entorno de trabajo:<br>
 
 ## Índice
-- [Configuración del Entorno](# Configuración del entorno)
-    * [Comprobación de las herramientas](## Comprobación de las herramientas)
-    * [Instalación de las herramientas](## Instalación de las herramientas)
-        1. [Actualización de repositorios](1. Actualización de los repositorios:)
-        2. [SSH](2. Instalación de ssh:)
-        3. [Git](3. Instalación de git:)
-        4. [Docker](4. Instalación de Docker en **Ubuntu**:)
+- [Configuración del Entorno](#Configuración-del-entorno)
+    * [Comprobación de las herramientas](##-Comprobación-de-las-herramientas)
+    * [Instalación de las herramientas](##-Instalación-de-las-herramientas)
+        
 
 # Configuración del entorno
 
