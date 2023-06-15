@@ -71,7 +71,7 @@ En este apartado vamos a comprobar que herramientas tenemos instaladas.
     ```
 <br>
 
-4. Instalación de Docker en **Ubuntu**: `______` [Docker Docs](https://docs.docker.com/engine/install/ubuntu/)
+4. Instalación de Docker en **Ubuntu**: --- [Docker Docs](https://docs.docker.com/engine/install/ubuntu/)
     * *Seteamos los repositorios de docker*
 
         ```bash
