@@ -4,9 +4,9 @@ Bienvenido a este ejercicio práctico en el que vamos a aprender los conceptos b
 En primera instancia vamos a configurar correctamente nuestro entorno de trabajo:<br>
 
 ## Índice
-- [Configuración del Entorno](#configuracion-del-entorno)
-    * [Comprobación de las herramientas](#comprobacion-de-las-herramientas)
-    * [Instalación de las herramientas](#instalacion-de-las-herramientas)
+- [Configuración del Entorno](#configuraci%C3%B3n-del-entorno)
+    * [Comprobación de las herramientas](#comprobaci%C3%B3n-de-las-herramientas)
+    * [Instalación de las herramientas](##instalaci%C3%B3n-de-las-herramientas)
         
 
 # Configuración del entorno
@@ -109,7 +109,7 @@ En este apartado vamos a comprobar que herramientas tenemos instaladas.
 
 
 
-
+https://github.com/guzmantp/EjercicioPracticoDocker/tree/gtoledano#instalaci%C3%B3n-de-las-herramientas
 
 
 ```bash
