@@ -9,7 +9,7 @@ En primera instancia vamos a configurar correctamente nuestro entorno de trabajo
     * [Instalación de las herramientas]( #instalaci%C3%B3n-de-las-herramientas)
 - [Conozcamos un poco de Docker](#conozcamos-un-poco-de-docker)
     * [Qué vamos a hacer](#qu%C3%A9-vamos-a-hacer)
-    * [Elementos de Docker](#elementos-de-dock%C3%B3er)
+    * [Elementos de Docker](#elementos-de-docker)
     * [Comandos básicos de Docker](#comandos-b%C3%A1sicos-de-docker)
 - [Comenzamos el ejercicio](#comenzamos-el-ejercicio)
     * [Creación del dockerfile](#creaci%C3%B3n-del-dockerfile)
@@ -251,6 +251,17 @@ Para crear el contenedor lo único que debemos de hacer es ejecutar el **run**. 
 sudo docker run -p 80:80 servidor_apache
 ```
 <br>
+
+## Accedemos a nuestro servidor
+Por último, únicamente quedaría comprobar en una terminal si nuestro contenedor esta ejecutándose, para comprobarlo introducimos este comando en la terminal:
+```bash
+sudo docker ps
+```
+Si nuestro contenedor está ejecutandose correctamente aparecerá listado en nuestra terminal.
+<br>
+Por último, abrimos un navegador web y accedemos al servidor a través de él, los contenedores se ejecutan en local, por lo que si accedes desde la propia máquina virtual tendrás que acceder a través de **localhost:80** si en cambio, quieres acceder desde otro lado, tendrás que especificar la dirección ip de la máquina host, indicando el puerto.
+
+<br><br>
 Esperamos que os haya servido de ayuda para descubrir lo que es docker y que os haya proporcionado un poco de curiosidad para seguir aprendiendo esta tecnología.
 <br>
 Gracias.
