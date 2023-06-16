@@ -13,7 +13,7 @@ En primera instancia vamos a configurar correctamente nuestro entorno de trabajo
     * [Comandos básicos de Docker](#comandos-b%C3%A1sicos-de-docker)
 
 
-![Logo Docker](https://1000logos.net/wp-content/uploads/2021/11/Docker-Logo-2013.png)
+![Logo Docker](https://1000logos.net/wp-content/uploads/2021/11/Docker-Logo-2013.png)<br>
 
 
 # Configuración del entorno
