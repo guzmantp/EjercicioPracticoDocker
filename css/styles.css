@@ -15,12 +15,18 @@
     height: 100%;
     box-sizing: border-box;
     overflow: hidden;
-    padding: 50px;
+    padding: 80px;
+}
+
+#bottomContainer{
+    position: absolute;
+    bottom: -40px;
+    left: 0;
 }
 
 #leftPanel{
     width: 50%;
-    height: 80%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +35,7 @@
 
 #rightPanel{
     width: 50%;
-    height: 80%;
+    height: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,5 +67,20 @@
     font-size: 40pt;
     font-weight: 400;
     color: rgb(57,77,84);
+}
+
+#by{
+    position: absolute;
+    bottom: 50px;
+    left: 70px;
+    display: flex;
+    width: 200px;
+}
+
+#by p{
+    font-family: poppins;
+    font-size: 15pt;
+    font-weight: 200;
+    color: rgb(235, 235, 235);
 }
 
