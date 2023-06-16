@@ -15,6 +15,8 @@ En primera instancia vamos a configurar correctamente nuestro entorno de trabajo
     * [Creación del dockerfile](#creaci%C3%B3n-del-dockerfile)
     * [Creación del dockerignore](#creaci%C3%B3n-del-dockerignore)
     * [Creamos el contenedor](#creamos-el-contenedor)
+    * [Accedemos a nuestro servidor](#accedemos-a-nuestro-servidor)
+
 
 
 
