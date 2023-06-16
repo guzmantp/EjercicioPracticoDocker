@@ -4,13 +4,18 @@ Bienvenido a este ejercicio práctico en el que vamos a aprender los conceptos b
 En primera instancia vamos a configurar correctamente nuestro entorno de trabajo:<br>
 
 ## Índice
-- [Configuración del Entorno](#configuraci%C3%B3n-del-entorno)
+- [Configuración del Entorno](#configuracin-del-entorno)
     * [Comprobación de las herramientas](#comprobaci%C3%B3n-de-las-herramientas)
     * [Instalación de las herramientas]( #instalaci%C3%B3n-de-las-herramientas)
 - [Conozcamos un poco de Docker](#conozcamos-un-poco-de-docker)
     * [Qué vamos a hacer](#qu%C3%A9-vamos-a-hacer)
-    * [Elementos de Docker](#elementos-de-docker)
+    * [Elementos de Docker](#elementos-de-dock%C3%B3er)
     * [Comandos básicos de Docker](#comandos-b%C3%A1sicos-de-docker)
+- [Comenzamos el ejercicio](#comenzamos-el-ejercicio)
+    * [Creación del dockerfile](#creaci%C3%B3n-del-dockerfile)
+    * [Creación del dockerignore](#creaci%C3%B3n-del-dockerignore)
+    * [Creamos el contenedor](#creamos-el-contenedor)
+
 
 
 ![Logo Docker](https://1000logos.net/wp-content/uploads/2021/11/Docker-Logo-2013.png)<br>
@@ -20,7 +25,7 @@ En primera instancia vamos a configurar correctamente nuestro entorno de trabajo
 
 Este ejercicio se va a realizar en un entorno **linux**, específicamente en un entorno **Ubuntu**, aprenderemos a utilizar Docker Engine mediante comandos.<br>
 
-*Se recomienda utilizar una máquina virtual como entorno de trabajo, utilizaremos visual code como editor de texto para generar el .dockerfile, hay dos opciones:*
+*Se recomienda utilizar una máquina virtual como entorno de trabajo, utilizaremos visual code como editor de texto para generar el dockerfile, hay dos opciones:*
     -*En un entorno Linux con escritorio instalar visual code desde los propios repositorios de la distribución.*
     -*Instalar ssh en el entorno linux y utilizar visual code de forma remota desde windows u otro entorno a elección con el plugin propietario 'Remote - SSH'*
 
