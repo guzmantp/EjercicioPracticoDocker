@@ -7,7 +7,7 @@ En primera instancia vamos a configurar correctamente nuestro entorno de trabajo
 - [Configuración del Entorno](#configuraci%C3%B3n-del-entorno)
     * [Comprobación de las herramientas](#comprobaci%C3%B3n-de-las-herramientas)
     * [Instalación de las herramientas]( #instalaci%C3%B3n-de-las-herramientas)
-- [Comenzamos el ejercicio](#comenzamos-el-ejercicio)
+- [Conozcamos un poco de Docker](#conozcamos-un-poco-de-docker)
     * [Qué vamos a hacer](#qu%C3%A9-vamos-a-hacer)
     * [Elementos de Docker](#elementos-de-docker)
     * [Comandos básicos de Docker](#comandos-b%C3%A1sicos-de-docker)
@@ -114,7 +114,7 @@ En este apartado vamos a comprobar que herramientas tenemos instaladas.
         sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
         ```
 
-# Comenzamos el Ejercicio
+# Conozcamos un poco de Docker
 
 ### Qué vamos a hacer
 En este ejercicio vamos a aprender a **dockerizar** un servicio web de forma simple.<br>
@@ -190,6 +190,65 @@ En este ejercicio no vamos a entrar en más profundidad de todas las partes que 
     docker exec -it ID_contenedor
     ```
 
-```bash
+# Comenzamos el ejercicio
 
+Para este ejercicio vamos a utilizar una imagen ya creada de [Apache](https://hub.docker.com/_/httpd) de **DockerHub**. En primer lugar crearemos el dockerfile para la creación de la imagen, en segundo lugar configuraremos un dockerignore muy sencillito para evitar que se copie el README.md de este repositorio y por último crearemos la imagen y levantaremos nuestro contenedor con el servidor web listo para ser utilizado.
+
+## Creación del dockerfile
+Como ya hemos descrito anteriormente, el dockerfile es un archivo que determina cómo se va a construir nuestra imagen. El primer paso que se suele dar en un dockerfile es determinar cual va a ser el sistema operativo base que vamos a utilizar en el contenedor, como en este caso vamos a utilizar una imagen ya creada, no necesitamos especificar el so, ya que viene integrado en la imagen base que vamos a utilizar, aunque si que es buena práctica indicarle, en caso de que tenga varias versiones, cual vamos a utilizar, así nos evitamos problemas de incompatibilidades en un futuro. En este caso indicaremos la versión de apache a utilizar y como está construida con varios so, también indicaremos el so a utilizar.<br>
+Creamos un archivo y lo nombramos asi: 'dockerfile'
+* Indicamos la imagen base a utilizar:
+   ```dockerfile
+   FROM httpd:2.4.57-alpine
+   ```
+Acto seguido tendremos que copiar todos los archivos que componen la web al directorio que utiliza apache. En la primera ruta ponemos un punto para indicar que el contenido que queremos copiar se encuentra en la misma ubicación del dockerfile y acto seguido ponemos la ruta donde queremos copiar los archivos dentro del contenedor. **MUY IMPORTANTE** Estamos trabajando con entornos separados, es decir, la primera ruta hace referencia a nuestra máquina local y la segunda hace referencia al contenedor, el cual tiene otra estructura de directorios y archivos.
+* Copiar archivos al direcorio base de Apache.
+   ```dockerfile
+   COPY . /usr/local/apache2/htdocs/
+   ```
+
+## Creación del dockerignore
+El dockerignore, a lo mismo que el gitignore, es un archivo que indica que directorios o ficheros tinene que ignorar docker a la hora de trabajar, así que en este caso lo necesitaremos para no copiar el README.md que contiene este repositorio. En este ejemplo se fuerza un poco a utilizarlo para un primer contacto con el, pero realmente sería muy fácil solventarlo sin un dockerignore, tendríamos dos opciones:
+* Nos cargamos el README.md :)
+* Metemos toda la web en un directorio y modificamos la ruta del dockerfile para que únicamente copie los archivos de esa carpeta.
+
+Para marear un poco la perdíz, vamos a crearlo de todas las maneras:
+Creamos un archivo y le ponemos de nombre 'dockerignore'
+* Ponemos el nombre del archivo que queremos ignorar:
+   ```dockerignore
+   README.md
+   ```
+En este caso únicamente tenemos que descartar un archivo, pero debajo os dejo otras formas de ignorar elementos por si lo necesitais:
+* Ignorar archivos con extensión .txt
+   ```dockerignore
+   *.txt
+   ```
+* Ignorar directorios llamados 'datos':
+  ```dockerignore
+  datos/ 
+  ```
+* Ignorar todos los archivos del directorio 'archivos_temporales':
+   ```dockerignore
+   archivos_temporales/*
+   ```
+## Creamos el contenedor
+Por fín llegamos a lo bonito, que es ver como todo empieza a funcionar :)
+Como primer paso tenemos que abrir una terminal y posicionarnos en el directorio donde tenemos el dockerfile. Una vez estemos ahí, ejecutamos el **build**.
+```bash
+sudo docker build -t servidor_apache .
 ```
+Una vez tengamos la imagen creada podremos verla ejecutando:
+```bash
+sudo docker images
+```
+Para crear el contenedor lo único que debemos de hacer es ejecutar el **run**. En el propio comando exponemos el puerto 80 del contenedor y de nuestra máquina para poder acceder al servidor.
+```bash
+sudo docker run -p 80:80 servidor_apache
+```
+<br>
+Esperamos que os haya servido de ayuda para descubrir lo que es docker y que os haya proporcionado un poco de curiosidad para seguir aprendiendo esta tecnología.
+<br>
+Gracias.
+
+   
+
