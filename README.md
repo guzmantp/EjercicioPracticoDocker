@@ -11,7 +11,10 @@ En primera instancia vamos a configurar correctamente nuestro entorno de trabajo
     * [Qué vamos a hacer](#qu%C3%A9-vamos-a-hacer)
     * [Elementos de Docker](#elementos-de-docker)
     * [Comandos básicos de Docker](#comandos-b%C3%A1sicos-de-docker)
-        
+
+
+[Logo Docker](https://1000logos.net/wp-content/uploads/2021/11/Docker-Logo-2013.png)
+
 
 # Configuración del entorno
 
@@ -123,8 +126,8 @@ En los contenedores **Docker** tenemos tres elementos bien diferenciados pero qu
 2. **Imagenes**: Las imágenes son paquetes ejecutables que contienen todo lo necesario para crear un **contenedor**, contiene el sistema operativo, las bibliotecas, los archivos de configuración y el código de la aplicación que vamos a ejecutar. Las imagenes son **portátiles** y muy **fáciles de compartir**, quí reside la fuerza de los contenedores.
 3. **Contenedores**: Los contenedores son entornos de ejecución que utilizan la tecnología de virtualización, pueden confundirse fácilmente con una máquina virtual, aunque no son iguales. El contenedor es creado a partir de la Imagen, a lo mismo que cuando instalamos un sistema operativo, nos descargamos previamente su imagen .iso.
 
-En este ejercicio no vamos a entrar en más profundidad de todas las partes que tiene docker, pero si tienes curiosidad y quieres seguir investigando te dejo algunos conceptos extras que seguro que te mantendrán entretenido un ratito más :)
-* **Volúmenes**: Seguro que te són muy útiles si quieres crear una base de datos o compartir recursos.
+En este ejercicio no vamos a entrar en más profundidad de todas las partes que tiene docker, pero si tienes curiosidad y quieres seguir investigando te dejo algunos conceptos extras que seguro que te mantendrán entretenido un ratito más ;)
+* **Volúmenes**: Seguro que te son muy útiles si quieres crear una base de datos o compartir recursos.
 * **Docker compose**: Esto está chulisimo, mucho mucho, ¿Te imaginas poder levantar varios contenedores de un plumazo?
 * **Redes de docker**: Esto es más avanzado aún, pero mereze la pena echarle un vistacito.
 
