@@ -7,6 +7,10 @@ En primera instancia vamos a configurar correctamente nuestro entorno de trabajo
 - [Configuración del Entorno](#configuraci%C3%B3n-del-entorno)
     * [Comprobación de las herramientas](#comprobaci%C3%B3n-de-las-herramientas)
     * [Instalación de las herramientas]( #instalaci%C3%B3n-de-las-herramientas)
+- [Comenzamos el ejercicio](#comenzamos-el-ejercicio)
+    * [Qué vamos a hacer](#qu%C3%A9-vamos-a-hacer)
+    * [Elementos de Docker](#elementos-de-docker)
+    * [Comandos básicos de Docker](#comandos-b%C3%A1sicos-de-docker)
         
 
 # Configuración del entorno
@@ -118,6 +122,11 @@ En los contenedores **Docker** tenemos tres elementos bien diferenciados pero qu
 1. **Archivos de construcción**: Los archivos de construcción son los ya mencionados **Dockerfiles**, son archivos que llevan las instrucciones para crear la **imagen** que posteriormente construirá el **contenedor**.
 2. **Imagenes**: Las imágenes son paquetes ejecutables que contienen todo lo necesario para crear un **contenedor**, contiene el sistema operativo, las bibliotecas, los archivos de configuración y el código de la aplicación que vamos a ejecutar. Las imagenes son **portátiles** y muy **fáciles de compartir**, quí reside la fuerza de los contenedores.
 3. **Contenedores**: Los contenedores son entornos de ejecución que utilizan la tecnología de virtualización, pueden confundirse fácilmente con una máquina virtual, aunque no son iguales. El contenedor es creado a partir de la Imagen, a lo mismo que cuando instalamos un sistema operativo, nos descargamos previamente su imagen .iso.
+
+En este ejercicio no vamos a entrar en más profundidad de todas las partes que tiene docker, pero si tienes curiosidad y quieres seguir investigando te dejo algunos conceptos extras que seguro que te mantendrán entretenido un ratito más :)
+* **Volúmenes**: Seguro que te són muy útiles si quieres crear una base de datos o compartir recursos.
+* **Docker compose**: Esto está chulisimo, mucho mucho, ¿Te imaginas poder levantar varios contenedores de un plumazo?
+* **Redes de docker**: Esto es más avanzado aún, pero mereze la pena echarle un vistacito.
 
 ## Comandos básicos de Docker
 
